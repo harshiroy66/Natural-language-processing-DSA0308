@@ -1,0 +1,23 @@
+from google import genai
+client = genai.Client(api_key="Your Api Key")
+prompt = input("Enter your prompt: ")
+response = client.models.generate_content(
+    model="gemini-3.6-flash",
+    contents=prompt
+)
+print("\nGenerated Text:")
+print(response.text)
+
+--------------------------------------------------------------
+
+Steps to get API key in AI Studio:
+
+1.Open AI Studio → Go to Google AI Studio.
+
+2.Sign in → Use your Google account.
+
+3.Go To Dashboard
+
+4.Get API key → On the dashboard, click Get API key.
+
+5.Copy the key → The key will be shown once. Copy it and store it safely.
